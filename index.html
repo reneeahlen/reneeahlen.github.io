@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Box layout</title>
+</head>
+<body>
+        <style>
+            /*inline css stylesheet*/
+            header {
+                background-color: blueviolet; /*makes the box move within its parent - browser window*/
+                position: relative; /* top of browser to the top border of the box*/
+                top: 10px; /*left of browser to the left border of the box*/
+                left: 210px;
+                width: 50%;
+                height: 300px;
+                border-radius: 25px;
+                z-index: 3; /*the layer the box is in*/
+                overflow: hidden; /* hides whatever is outside of the box*/
+            }
+            nav {
+                background-color: rgb(168, 88, 243);
+                position: relative;
+                top: 10px;
+                left: 210px;
+                width: 50%;
+                height: 150px;
+                border-radius: 25px;
+            }
+        </style>
+<header> <!-- first box-->
+    <h1>header</h1>
+    <nav>
+        <p>Navigation</p><!-- second box-->
+    </nav>
+</header>
+</body>
+</html>
