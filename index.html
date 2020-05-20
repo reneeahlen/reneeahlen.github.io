@@ -1,38 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Box layout</title>
+    <link rel="stylesheet" href="index-style.css">
+    <title>Re-Spotified Home</title>
 </head>
+
 <body>
-        <style>
-            /*inline css stylesheet*/
-            header {
-                background-color: blueviolet; /*makes the box move within its parent - browser window*/
-                position: relative; /* top of browser to the top border of the box*/
-                top: 10px; /*left of browser to the left border of the box*/
-                left: 210px;
-                width: 50%;
-                height: 300px;
-                border-radius: 25px;
-                z-index: 3; /*the layer the box is in*/
-                overflow: hidden; /* hides whatever is outside of the box*/
-            }
-            nav {
-                background-color: rgb(168, 88, 243);
-                position: relative;
-                top: 10px;
-                left: 210px;
-                width: 50%;
-                height: 150px;
-                border-radius: 25px;
-            }
-        </style>
-<header> <!-- first box-->
-    <h1>header</h1>
     <nav>
-        <p>Navigation</p><!-- second box-->
+        <a href="index.html"> Home </a><a href="index.html"> Premium </a><a href="contact.html"> Contact </a>
     </nav>
-</header>
+
+    <div id="grad1"><!-- Gradient bkgd -->
+
+        <img id="header" src="logo/header.png" alt="spotify logo">
+        <h2>Soundtrack yourself</h2>
+
+        <div class="searchbar">
+            <form action="#">
+                <input type="text" placeholder="Millions of songs.." />
+                <input id="button" type="submit" value="Search" />
+            </form>
+        </div>
+        <br>
+        <main>
+        <div id="box1"><!-- box1 - House -->
+            <div id="bigroom1">
+                <img id="layout" src="logo/layout.jpg" alt="All design pieces">
+            </div>
+            <div id="bigroom2">
+                <h2 id="headline">GD41 Studio 2</h2>
+                <h4>Rebranding Assignment</h4>
+                <p class="about">Choose a business to rebrand and research information. Organize a clear company profile, designing a layout that is graphically interesting and informative. Combine your design to create a business card, envelope and letterhead using the design choices to create a cohesive stationery system.</p>
+                
+                <p class="about">Create a brochure and postcard that connects your identity pieces together with your company by using graphic elements and compatible designs. Create a Press Kit for your company with a cohesive design that connects all your current identity pieces together. A Press Kit is designed to hold marketing materials and can be viewed as a pre-packaged folder.</p>
+            </div>
+        </div>
+        <br>
+        <div class="slide-wrap">
+            <div class="navigate">
+                <a href="#slide-1"><img src="logo/1.png" onmouseover="this.src='logo/1hov.png'" onmouseout="this.src='logo/1.png'" alt="1 icon" style="width: 5%;"></a>
+
+                <a href="#slide-2"><img src="logo/2.png" onmouseover="this.src='logo/2hov.png'" onmouseout="this.src='logo/2.png'"alt="2 icon" style="width: 5%;"></a>
+                <a href="#slide-3"><img src="logo/3.png" onmouseover="this.src='logo/3hov.png'" onmouseout="this.src='logo/3.png'" alt="3 icon" style="width: 5%;"></a>
+                <a href="#slide-4"><img src="logo/4.png" onmouseover="this.src='logo/4hov.png'" onmouseout="this.src='logo/4.png'" alt="4 icon" style="width: 5%;"></a>
+                <a href="#slide-5"><img src="logo/5.png" onmouseover="this.src='logo/5hov.png'" onmouseout="this.src='logo/5.png'" alt="5 icon" style="width: 5%;"></a>
+                <a href="#slide-6"><img src="logo/6.png" onmouseover="this.src='logo/6hov.png'" onmouseout="this.src='logo/6.png'" alt="6 icon" style="width: 5%;"></a>
+            </div>
+<br>
+            <div class="slider">
+                <div class="slide" id="slide-1"> 
+                    <div class="rooms">
+                    <!-- Room 1 -->
+                    <div class="closets">
+                        <!-- Closet 1 -->
+                        <a href="letter.html">
+                            <img src="logo/letter.jpg" alt="letter"></a>
+                    </div>
+                    <div class="closets">
+                        <!-- Closet 2 -->
+                        <a href="stationary.html">
+                            <img src="logo/stationary2.jpg" alt="card and enveope"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <p>Stationary System</p>
+                </div></div>
+                <div class="slide" id="slide-2"><div class="rooms">
+                    <!-- Room 2 -->
+                    
+                    <div class="closets">
+                        <!-- Closet 3 -->
+                        <a href="postcardfront.html">
+                            <img src="logo/postcard_front.jpg" alt="postcard front"></a>
+                    </div>
+                    <div class="closets">
+                        <!-- Closet 4 -->
+                        <a href="postcardback.html">
+                            <img src="logo/postcard_back.jpg" alt="postcard back"></a>
+                    </div><br><br><p> Postcard</p>
+                </div></div>
+                <div class="slide" id="slide-3"><div class="rooms">
+                    <!-- Room 3 -->
+                    
+                    <a href="trifold.html">
+                        <img src="logo/trifold3.jpg" alt="trifold brochure"></a><p> Trifold Brochure</p>
+                </div></div>
+                <div class="slide" id="slide-4"><div class="rooms">
+                    <!-- Room 1 -->
+                    
+                    <a href="outside.html">
+                        <img src="logo/folderkit_outside.jpg" alt="folder outside"></a><p> Presskit Outside</p>
+                </div></div>
+                <div class="slide" id="slide-5"><div class="rooms">
+                    <!-- Room 2 -->
+                    
+                    <a href="example.html">
+                        <img src="logo/folderkit_example.jpg" alt="folder inside example"></a><p> Presskit Example</p>
+                </div></div>
+                <div class="slide" id="slide-6">                <div class="rooms">
+                    <!-- Room 3 -->
+                    
+                    <a href="inside.html">
+                        <img src="logo/folderkit_inside.jpg" alt="folder inside"></a><p> Presskit Inside</p>
+                </div></div>
+            </div>
+        </div>
+
+
+
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <br>
+    <br>
+    </div>
+    <footer>
+        <a href="index.html">Homepage</a>
+    </footer>
 </body>
 </html>
