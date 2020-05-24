@@ -1,0 +1,106 @@
+img {
+    width: 100%;
+}
+nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+nav a {
+    text-decoration: none;
+}
+#nav1 {
+    background-color:  white;
+    color: black;
+    font-family: sans-serif;
+    font-size: medium;
+    width: 30%;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: auto;
+}
+#nav1 a {
+    color: black;
+    text-decoration: none;
+    padding-right:10px;  /*spacing between links*/
+}
+#nav1 a:hover {
+    color: coral;
+}
+.logo {
+    width: 20px;
+    padding-left: 10px;  /*spacing between links*/
+    padding-right: 10px; 
+}
+#nav2 {
+    background-color:  white;
+    color: black;
+    font-family: sans-serif;
+    font-size: medium;
+    float: right;
+    width: 70%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: auto;
+}
+#nav2 a {
+    color: black;
+    text-decoration: none;
+    float: right;
+    padding: 0px 18px 0px 0px; /*spacing between links*/
+}
+#nav2 a:hover {
+    color: coral;
+}
+body {
+    font-family: 'Muli', sans-serif;
+}
+main {
+    background-image: url(bkgd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+}
+article {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.rooms {
+    background-color: white;
+    font-size: smaller;
+    width: 210px;
+    height: 260px;
+    float: left;
+    text-align: center;
+    margin: 11px;
+    border: 30px;
+    align-content: center;
+}
+.closets {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
