@@ -63,7 +63,7 @@ body {
     font-family: 'Muli', sans-serif;
 }
 main {
-    background-image: url(bkgd.jpg);
+    background-image: url(portfolio/bkgd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
