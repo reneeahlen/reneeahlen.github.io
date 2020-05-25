@@ -74,8 +74,32 @@ main {
 .header {
     width: 100%;
 }
+.aboutheader {
+    width: 100%;
+    display: inline-block;
+}
+#rawho {
+    width: 100%;
+}
+.infobox {
+    background-color: white;
+    float: right;
+    width: 45%;
+    padding-left: 20;
+    padding-right: 9px;
+    margin-left: 20px;
+}
 article {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.contactme {
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -103,4 +127,48 @@ article {
     margin-right: 5px;
     margin-top: 5px;
     overflow: hidden;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:100%; margin:50px auto; }
+
+.feedback-input {
+  background-color:white;
+  color: black;
+  font-weight:500;
+  line-height: 22px;
+  border:2px solid coral;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+.feedback-input:focus { 
+    border:2px solid coral; 
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+[type="submit"] {
+  width: 100%;
+  background-color:white;
+  border:0;
+  cursor:pointer;
+  color:coral;
+  font-size: medium;
+  padding-top:20px;
+  padding-bottom:20px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { 
+    background-color: coral;
+    color: white;
 }
