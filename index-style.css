@@ -32,10 +32,15 @@ nav a {
     padding-right:10px;  /*spacing between links*/
 }
 #nav1 a:hover {
-    color: coral;
+    color: bisque; 
 }
 .logo {
     width: 20px;
+    padding-left: 10px;  /*spacing between links*/
+    padding-right: 10px; 
+}
+.logo3 {
+    width: 100px;
     padding-left: 10px;  /*spacing between links*/
     padding-right: 10px; 
 }
@@ -46,7 +51,7 @@ nav a {
     font-size: medium;
     float: right;
     width: 70%;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 5px;
     overflow: auto;
 }
@@ -57,15 +62,14 @@ nav a {
     padding: 0px 18px 0px 0px; /*spacing between links*/
 }
 #nav2 a:hover {
-    color: coral;
+    color: bisque; 
+    text-decoration: underline;
 }
 body {
     font-family: 'Muli', sans-serif;
 }
 main {
-    background-image: url(portfolio/bkgd.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -81,14 +85,7 @@ main {
 #rawho {
     width: 100%;
 }
-.infobox {
-    background-color: white;
-    float: right;
-    width: 45%;
-    padding-left: 20;
-    padding-right: 9px;
-    margin-left: 20px;
-}
+
 article {
     width: 100%;
     margin-left: auto;
@@ -108,7 +105,7 @@ article {
     overflow: hidden;
 }
 .rooms {
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     font-size: smaller;
     width: 210px;
     height: 260px;
@@ -117,6 +114,7 @@ article {
     margin: 11px;
     border: 30px;
     align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .closets {
     background-color: rgb(255, 255, 255);
@@ -130,14 +128,17 @@ article {
 }
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-form { max-width:100%; margin:50px auto; }
+form { 
+    max-width:100%; 
+    margin:50px auto; 
+}
 
 .feedback-input {
   background-color:white;
   color: black;
   font-weight:500;
   line-height: 22px;
-  border:2px solid coral;
+  border:2px solid rgb(245, 245, 245);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -148,7 +149,7 @@ form { max-width:100%; margin:50px auto; }
   outline:0;
 }
 .feedback-input:focus { 
-    border:2px solid coral; 
+    border:2px solid bisque; 
 }
 textarea {
   height: 150px;
@@ -160,7 +161,7 @@ textarea {
   background-color:white;
   border:0;
   cursor:pointer;
-  color:coral;
+  color: rgb(51, 51, 51);
   font-size: medium;
   padding-top:20px;
   padding-bottom:20px;
@@ -169,6 +170,29 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { 
-    background-color: coral;
-    color: white;
+    background-color: bisque; 
+    color: rgb(51, 51, 51);
+}
+.aboutbox {
+    font-size: smaller;
+    width: 60%;
+    float: center;
+    text-align: left;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+    background-color: white;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: auto;
 }
