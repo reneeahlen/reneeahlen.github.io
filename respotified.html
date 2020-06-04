@@ -7,15 +7,13 @@
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> <!-- MULI font -->
     <!-- Add Social media icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="slideshow.js"></script>
-    <link rel="icon" type="image/png" href="ra/favicon.ico" sizes="32x32">
     <title>Re-Spotified</title>
 </head>
 <nav><span id="nav1"><a href="index.html"><img class="logo" src="ra/logo.png" alt="RA icon"></a>
     <a href="https://www.facebook.com/renee.ahlen" class="fa fa-facebook" target="_blank"></a>
     <a href="https://www.instagram.com/reneeahlen/" class="fa fa-instagram" target="_blank"></a>
     <a href="https://www.linkedin.com/in/ren%C3%A9e-aahl%C3%A9n-51616118b/" class="fa fa-linkedin" target="_blank"></a></span><span
-        id="nav2"><a href="contactme.html">CONTACT</a><a href="resources.html">RESOURCES</a><a href="index.html">PORTFOLIO</a></span>
+        id="nav2"><a href="contactme.html">CONTACT</a><a href="#">RESOURCES</a><a href="index.html">PORTFOLIO</a></span>
 </nav>
 <body>
     <div id="grad1"><!-- Gradient bkgd -->
@@ -95,6 +93,26 @@
                 <button onclick="plusDivs(1)"><img src="logo/next.png" alt="previous button" style="width: 30px;"></button>
                 
                 </div>
+                
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
                 <br>
             </div></div>
         <br><br><br>

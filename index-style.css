@@ -94,6 +94,7 @@ article {
     padding-top: 20px;
     padding-bottom: 20px;
     overflow: hidden;
+    
 }
 .contactme {
     width: 60%;
@@ -106,9 +107,9 @@ article {
 }
 .rooms {
     background-color: rgb(245, 245, 245);
-    font-size: smaller;
+    font-size: x-small;
     width: 210px;
-    height: 260px;
+    height: 280px;
     float: left;
     text-align: center;
     margin: 11px;
@@ -124,6 +125,29 @@ article {
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
+    overflow: hidden;
+}
+.dresser {
+    background-color: rgb(245, 245, 245);
+    font-size: smaller;
+    width: 420px;
+    height: 420px;
+    float: left;
+    text-align: center;
+    margin: 22px;
+    border: 30px;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.drawer {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 30px;
     overflow: hidden;
 }
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
